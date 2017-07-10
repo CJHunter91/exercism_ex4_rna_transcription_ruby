@@ -6,6 +6,8 @@ class Complement
 
         when "C"; rna_strand.push("G")
         when "G"; rna_strand.push("C")
+        when "T"; rna_strand.push("A")
+        when "A"; rna_strand.push("U")
         else; return ''
 
       end
