@@ -4,7 +4,8 @@ class Complement
     dna_strand.chars.each do |nucleotide|
       case nucleotide
 
-        when "C"; rna_strand.push('G')
+        when "C"; rna_strand.push("G")
+        when "G"; rna_strand.push("C")
         else; return ''
 
       end
